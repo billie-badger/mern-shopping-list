@@ -10,6 +10,8 @@ import {
   Container 
 } from 'reactstrap'
 
+import vatcherylogo from '../assets/vatchery-logo.png'
+
 class AppNavbar extends Component {
   state = {
     isOpen: false
@@ -23,9 +25,12 @@ class AppNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar color='dark' dark expand='sm' className='mb-5'>
+        <Navbar color='light' light expand='sm' className='mb-5'>
           <Container>
-            <NavbarBrand href="/">Shopping List</NavbarBrand>
+            <NavbarBrand href="/">
+              <img src={vatcherylogo} alt='vatchery-logo' width='20%' style={{marginRight: '1rem'}}/>
+              Vatchery
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>

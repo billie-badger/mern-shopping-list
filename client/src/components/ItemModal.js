@@ -11,7 +11,7 @@ import {
 } from 'reactstrap'
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions'
-import uuid from 'uuid'
+
 
 class ItemModal extends Component {
   state = {
@@ -35,7 +35,6 @@ class ItemModal extends Component {
     e.preventDefault()
 
     const newItem = {
-      id: uuid(),
       name: this.state.name
     }
 
@@ -50,7 +49,7 @@ class ItemModal extends Component {
     return (
       <div>
         <Button
-          color='dark'
+          color='info'
           style={{marginBottom: '2rem'}}
           onClick={this.toggle}
           >
@@ -63,7 +62,7 @@ class ItemModal extends Component {
           <ModalHeader
             toggle={this.toggle}
           >
-            Add to Shopping List
+            Add to Vatchery
           </ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
