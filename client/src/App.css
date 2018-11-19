@@ -1,3 +1,8 @@
+html,
+body {
+  background: #666;
+}
+
 .remove-btn {
   margin-right: 0.5rem;
 }

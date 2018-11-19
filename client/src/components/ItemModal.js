@@ -50,7 +50,7 @@ class ItemModal extends Component {
       <div>
         <Button
           color='info'
-          style={{marginBottom: '2rem'}}
+          style={{marginBottom: '2rem', marginLeft: '1rem'}}
           onClick={this.toggle}
           >
           Add Item
